@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+#gameBoard {
+    display: grid;
+    grid-template-columns: repeat(5, 50px);
+    grid-template-rows: repeat(5, 50px);
+    gap: 10px;
+}
+
+.cell {
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: rgb(32, 32, 32);
+}
+
+.cell:hover {
+    background-color: rgb(83, 83, 83);
+    transition: all 0.3s ease-out;
+}
+
+p {
+    text-align: center;
+    font-size: 34px;
+    color: white;
+}
+
+.cell[data-value='X'] {
+    color: red;
+    border: 2px solid rgb(173, 0, 0);
+}
+
+.cell[data-value='O'] {
+    color: blue;
+    border: 2px solid rgb(58, 0, 173);
+}
+
+.hidden {
+    display: none;
+}
+
+.btn {
+    border: 2px rgb(83, 83, 83);
+    background-color: rgb(32, 32, 32);
+    color: white;
+    cursor: pointer;
+    width: 49%;
+    vertical-align: top;
+}
+
+.redCount {
+    color: red;
+}
+
+.blueCount {
+    color: blue;
+}

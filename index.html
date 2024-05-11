@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>krestiki-noliki</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Крестики-нолики</h1>
+            <p><span class="redCount">0</span> - <span class="blueCount">0</span></p>
+        </header>
+        <div id="gameBoard">
+            <div class="cell" id="cell0" onclick="cellClicked(0)"></div>
+            <div class="cell" id="cell1" onclick="cellClicked(1)"></div>
+            <div class="cell" id="cell2" onclick="cellClicked(2)"></div>
+            <div class="cell" id="cell3" onclick="cellClicked(3)"></div>
+            <div class="cell" id="cell4" onclick="cellClicked(4)"></div>
+
+            <div class="cell" id="cell5" onclick="cellClicked(5)"></div>
+            <div class="cell" id="cell6" onclick="cellClicked(6)"></div>
+            <div class="cell" id="cell7" onclick="cellClicked(7)"></div>
+            <div class="cell" id="cell8" onclick="cellClicked(8)"></div>
+            <div class="cell" id="cell9" onclick="cellClicked(9)"></div>
+
+            <div class="cell" id="cell10" onclick="cellClicked(10)"></div>
+            <div class="cell" id="cell11" onclick="cellClicked(11)"></div>
+            <div class="cell" id="cell12" onclick="cellClicked(12)"></div>
+            <div class="cell" id="cell13" onclick="cellClicked(13)"></div>
+            <div class="cell" id="cell14" onclick="cellClicked(14)"></div>
+
+            <div class="cell" id="cell15" onclick="cellClicked(15)"></div>
+            <div class="cell" id="cell16" onclick="cellClicked(16)"></div>
+            <div class="cell" id="cell17" onclick="cellClicked(17)"></div>
+            <div class="cell" id="cell18" onclick="cellClicked(18)"></div>
+            <div class="cell" id="cell19" onclick="cellClicked(19)"></div>
+
+            <div class="cell" id="cell20" onclick="cellClicked(20)"></div>
+            <div class="cell" id="cell21" onclick="cellClicked(21)"></div>
+            <div class="cell" id="cell22" onclick="cellClicked(22)"></div>
+            <div class="cell" id="cell23" onclick="cellClicked(23)"></div>
+            <div class="cell" id="cell24" onclick="cellClicked(24)"></div>
+        </div>
+        <p id="message"></p>
+        <div class="btnContainer hidden">
+            <button class="btn" id="playAgain">Играть Снова</button>
+            <button class="btn" id="restart">Перезапуск</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
