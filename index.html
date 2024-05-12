@@ -9,41 +9,51 @@
 </head>
 
 <body>
+    <audio id="move">
+        <source src="data/move.mp3" type="audio/mpeg">
+      </audio>
+      <audio id="win">
+        <source src="data/win.mp3" type="audio/mpeg">
+      </audio>
     <div class="container">
         <header>
             <h1>Крестики-нолики</h1>
             <p><span class="redCount">0</span> - <span class="blueCount">0</span></p>
         </header>
-        <div id="gameBoard">
-            <div class="cell" id="cell0" onclick="cellClicked(0)"></div>
-            <div class="cell" id="cell1" onclick="cellClicked(1)"></div>
-            <div class="cell" id="cell2" onclick="cellClicked(2)"></div>
-            <div class="cell" id="cell3" onclick="cellClicked(3)"></div>
-            <div class="cell" id="cell4" onclick="cellClicked(4)"></div>
+        <div class="selection">
+            <button class="btn" id="bot">Против Бота</button>
+            <button class="btn" id="vs">Против Человека</button>
+        </div>
+        <div id="gameBoard" class="gameBoard hideCursor hidden">
+            <div class="cell" id="cell00" onclick="cellClicked(0,0)"></div>
+            <div class="cell" id="cell01" onclick="cellClicked(0,1)"></div>
+            <div class="cell" id="cell02" onclick="cellClicked(0,2)"></div>
+            <div class="cell" id="cell03" onclick="cellClicked(0,3)"></div>
+            <div class="cell" id="cell04" onclick="cellClicked(0,4)"></div>
 
-            <div class="cell" id="cell5" onclick="cellClicked(5)"></div>
-            <div class="cell" id="cell6" onclick="cellClicked(6)"></div>
-            <div class="cell" id="cell7" onclick="cellClicked(7)"></div>
-            <div class="cell" id="cell8" onclick="cellClicked(8)"></div>
-            <div class="cell" id="cell9" onclick="cellClicked(9)"></div>
+            <div class="cell" id="cell10" onclick="cellClicked(1,0)"></div>
+            <div class="cell" id="cell11" onclick="cellClicked(1,1)"></div>
+            <div class="cell" id="cell12" onclick="cellClicked(1,2)"></div>
+            <div class="cell" id="cell13" onclick="cellClicked(1,3)"></div>
+            <div class="cell" id="cell14" onclick="cellClicked(1,4)"></div>
 
-            <div class="cell" id="cell10" onclick="cellClicked(10)"></div>
-            <div class="cell" id="cell11" onclick="cellClicked(11)"></div>
-            <div class="cell" id="cell12" onclick="cellClicked(12)"></div>
-            <div class="cell" id="cell13" onclick="cellClicked(13)"></div>
-            <div class="cell" id="cell14" onclick="cellClicked(14)"></div>
+            <div class="cell" id="cell20" onclick="cellClicked(2,0)"></div>
+            <div class="cell" id="cell21" onclick="cellClicked(2,1)"></div>
+            <div class="cell" id="cell22" onclick="cellClicked(2,2)"></div>
+            <div class="cell" id="cell23" onclick="cellClicked(2,3)"></div>
+            <div class="cell" id="cell24" onclick="cellClicked(2,4)"></div>
 
-            <div class="cell" id="cell15" onclick="cellClicked(15)"></div>
-            <div class="cell" id="cell16" onclick="cellClicked(16)"></div>
-            <div class="cell" id="cell17" onclick="cellClicked(17)"></div>
-            <div class="cell" id="cell18" onclick="cellClicked(18)"></div>
-            <div class="cell" id="cell19" onclick="cellClicked(19)"></div>
+            <div class="cell" id="cell30" onclick="cellClicked(3,0)"></div>
+            <div class="cell" id="cell31" onclick="cellClicked(3,1)"></div>
+            <div class="cell" id="cell32" onclick="cellClicked(3,2)"></div>
+            <div class="cell" id="cell33" onclick="cellClicked(3,3)"></div>
+            <div class="cell" id="cell34" onclick="cellClicked(3,4)"></div>
 
-            <div class="cell" id="cell20" onclick="cellClicked(20)"></div>
-            <div class="cell" id="cell21" onclick="cellClicked(21)"></div>
-            <div class="cell" id="cell22" onclick="cellClicked(22)"></div>
-            <div class="cell" id="cell23" onclick="cellClicked(23)"></div>
-            <div class="cell" id="cell24" onclick="cellClicked(24)"></div>
+            <div class="cell" id="cell40" onclick="cellClicked(4,0)"></div>
+            <div class="cell" id="cell41" onclick="cellClicked(4,1)"></div>
+            <div class="cell" id="cell42" onclick="cellClicked(4,2)"></div>
+            <div class="cell" id="cell43" onclick="cellClicked(4,3)"></div>
+            <div class="cell" id="cell44" onclick="cellClicked(4,4)"></div>
         </div>
         <p id="message"></p>
         <div class="btnContainer hidden">

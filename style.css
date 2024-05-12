@@ -13,12 +13,14 @@ body {
     color: white;
 }
 
+
+
 h1 {
     text-align: center;
     color: white;
 }
 
-#gameBoard {
+.gameBoard {
     display: grid;
     grid-template-columns: repeat(5, 50px);
     grid-template-rows: repeat(5, 50px);
@@ -26,7 +28,6 @@ h1 {
 }
 
 .cell {
-    cursor: pointer;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -54,16 +55,13 @@ p {
     border: 2px solid rgb(58, 0, 173);
 }
 
-.hidden {
-    display: none;
-}
 
 .btn {
     border: 2px rgb(83, 83, 83);
     background-color: rgb(32, 32, 32);
     color: white;
-    cursor: pointer;
     width: 49%;
+    cursor: pointer;
     vertical-align: top;
 }
 
@@ -73,4 +71,22 @@ p {
 
 .blueCount {
     color: blue;
+}
+
+.OCursor {
+    cursor: url(data/circle.png), auto;
+}
+
+.XCursor {
+    cursor: url(data/cross.png), auto;
+}
+.hideCursor {
+    cursor: none;
+}
+
+canvas {
+    z-index: -99;
+}
+.hidden {
+    display: none;
 }
